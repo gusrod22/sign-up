@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+h3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(/images/bg-intro-mobile.png);
+  font-family: "Poppins", sans-serif;
+}
+.main-layout{
+  margin: 0 auto;
+  padding: 20px;
+
+}
+main {
+  text-align: center;
+}
+header{
+  margin-bottom: 4rem;
+}
+h1{
+  margin-bottom: 1.5rem;
+}
+header,
+.trial-banner,
+button {
+  color: white;
+}
+.trial-banner {
+  background-color: hsl(248, 32%, 49%);
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 1px rgba(0, 0, 0, .1);
+}
+.try-trial{
+  font-weight: 700;
+}
+form {
+  margin-top: 25px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+input{
+  width: 95%;
+  margin-bottom: 15px;
+  padding: .8rem;
+  color: hsl(249, 10%, 26%) ;
+  font-weight: 600;
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+form > p {
+  color: hsl(246, 25%, 77%);
+}
+.terms{
+  font-size: .8rem;
+}
+.term-red{
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+button {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 0 hsl(154, 57%, 42%);
+  font-weight: 500;
+  width: 95%;
+}
+
