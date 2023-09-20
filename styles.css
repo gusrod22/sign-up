@@ -47,11 +47,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .main-layout{
+  height: 100%;
   margin: 0 auto;
-  padding: 20px;
-
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main {
+  max-height: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 header{
@@ -81,9 +87,27 @@ form {
   padding: 1rem;
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1);
 }
-input{
+.input-group{
+  position: relative;
   width: 95%;
   margin-bottom: 15px;
+
+}
+.error-icon{
+  position: absolute;
+  right: 20px;
+  top:35%;
+  transform: translateY(-50%);
+}
+.error-message{
+  text-align: right;
+  color: hsl(0, 100%, 74%);
+}
+.error{
+  display: none;
+}
+input{
+  width: 100%;
   padding: .8rem;
   color: hsl(249, 10%, 26%) ;
   font-weight: 600;
@@ -93,6 +117,7 @@ input{
 form > p {
   color: hsl(246, 25%, 77%);
 }
+
 .terms{
   font-size: .8rem;
 }
@@ -112,3 +137,25 @@ button {
   width: 95%;
 }
 
+/* desktop layout media query */
+
+@media screen and (min-width: 900px )  {
+  body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-layout{
+    width: 50rem;
+  }
+  header{
+    width: 20rem;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
