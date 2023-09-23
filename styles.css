@@ -135,6 +135,7 @@ button {
   box-shadow: 0 4px 0 hsl(154, 57%, 42%);
   font-weight: 500;
   width: 95%;
+  cursor: pointer;
 }
 
 /* desktop layout media query */
